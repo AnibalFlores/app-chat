@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm-4">
+      <select class="form-control" multiple size="20">
+        <option *ngFor="let Sala of salas" (click)="seleccionaSala(Sala)" class="text-monospace">{{Sala.name}} </option>
+      </select>
+    </div>
+    <div class="col-sm-8">
+      <div *ngIf="globals.salaActual">
+        <app-message-list *ngIf="globals.salaActual.mensajes != undefined" [salaActual]="globals.salaActual"></app-message-list>
+      </div>
+
+    </div>
+  </div>
+  <div *ngIf="globals.salaActual"></div>
+  <app-message-form [salaActual]="globals.salaActual"></app-message-form>
+  <app-newroom-form *ngIf="globals.logueado.role == 'Admin'" [salas]="salas"></app-newroom-form>
+</div>
+<div>

@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Aditional steps
+
+The project is bootstraped and uses font awesome
+Run `npm install bootstrap` to install it
+Run `npm install font-awesome` to install it
+next inside angular.json add this lines `"styles":  ["node_modules/bootstrap/dist/css/bootstrap.css","node_modules/font-awesome/css/font-awesome.css","src/styles.css"],`
+maybe some other dependencies are necessary via npm install such as jquery and popper.
+
+Regards
+Aníbal.-

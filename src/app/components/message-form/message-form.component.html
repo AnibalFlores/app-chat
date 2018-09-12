@@ -1,0 +1,5 @@
+<div>
+  <input class="form-control" (keyup.enter)="onKey($event)" type="text" [(ngModel)]="msg">
+  <button class="btn btn-primary" (click)="enviarMensaje()" id="Submit">Enviar</button>
+  <p>Id: {{ globals.logueado.id }} Nombre: {{ globals.logueado.name }} Alias: {{ globals.logueado.alias }} Rol: {{ globals.logueado.role }}</p>
+</div>

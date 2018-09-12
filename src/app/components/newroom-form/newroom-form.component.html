@@ -1,0 +1,7 @@
+<div>
+  <h3>Eres administrador crea tu propio chatroom</h3>
+  <p>
+    <input class="form-control" (keyup.enter)="onKey($event)" type="text" [(ngModel)]="nuevaSala">
+    <button class="btn btn-primary" (click)="crearSala()" id="Submit">Crear</button>
+  </p>
+</div>

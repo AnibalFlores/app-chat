@@ -1,0 +1,11 @@
+<div class="panel-body">
+  <h4>Mensajes en {{salaActual.name}}</h4>
+
+  <h1 *ngIf="!salaActual">Cargando mensajes...</h1>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let Mensaje of salaActual.mensajes">
+      {{ Mensaje.username }}: {{ Mensaje.name }}
+    </li>
+  </ul>
+</div>
