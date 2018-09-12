@@ -1,5 +1,15 @@
 # AppChat
 
+## Summary
+This is a little & dummy chat rooms application for practice the basics in Angular/Typescript.
+
+Implements global injection in [globals.ts](https://github.com/AnibalFlores/app-chat/blob/master/src/app/globals.ts)  service class
+
+A straight and simple use of Angular´s FormControl/FormGroup see [user.component.html](https://github.com/AnibalFlores/app-chat/blob/master/src/app/components/user/user.component.html) and [user.component.ts](https://github.com/AnibalFlores/app-chat/blob/master/src/app/components/user/user.component.ts)  files.
+
+
+#
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
@@ -28,11 +38,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Aditional steps
 
-The project is bootstraped and uses font awesome
+The project is bootstraped and uses font awesome.
+
 Run `npm install bootstrap` to install it
+
 Run `npm install font-awesome` to install it
-next inside angular.json add this lines `"styles":  ["node_modules/bootstrap/dist/css/bootstrap.css","node_modules/font-awesome/css/font-awesome.css","src/styles.css"],`
-maybe some other dependencies are necessary via npm install such as jquery and popper.
+
+Next inside `angular.json` add this lines under `"styles":  ["node_modules/bootstrap/dist/css/bootstrap.css","node_modules/font-awesome/css/font-awesome.css","src/styles.css"],`
+
+Maybe some other dependencies are necessary via npm install such as jquery and popper.
 
 Regards
 Aníbal.-
